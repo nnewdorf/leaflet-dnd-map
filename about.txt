@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Anek Gurmukhi
+- Font Author: Copyright 2021 The Anek Project Authors (https://github.com/EkType/Anek)
+- Font Source: http://fonts.gstatic.com/s/anekgurmukhi/v8/0QIAMXRO_YSkA0quVLY79JnHybfeEOrXCa9Dmd9Ql6a6R_vEMc5TaLkbd5tpXK41H6DjbA.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
