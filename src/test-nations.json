@@ -1,0 +1,11 @@
+[
+    {
+      "name": "Korensa",
+      "capital": {
+          "name": "Daranik",
+          "latlng": [1430,3000]
+      },
+      "cities": [
+      ]
+    }
+]

@@ -1,0 +1,16 @@
+.leaflet-container {
+    width: 100vw;
+    height: 100vh;
+  }
+
+.map-buttons {
+  position: absolute;
+  left: 44px;
+  margin: 10px;
+  z-index: 1000;
+  display: grid;
+  grid-template: 
+      "a b d"
+      ". c e"
+      ". . f"
+}

@@ -1,0 +1,166 @@
+[
+  {
+    "name": "Korensa",
+    "capital": {
+        "name": "Daranik",
+        "latlng": [1430,3000]
+    },
+    "cities": [
+      {
+        "name": "Seeker",
+        "latlng": [1747,3249]
+      },
+      {
+        "name": "Susa",
+        "latlng": [1402,3317]
+      },
+      {
+        "name": "Pasara",
+        "latlng": [1084,3432]
+      },
+      {
+        "name": "Tahrn",
+        "latlng": [880,3330]
+      },
+      {
+        "name": "Zinjaq",
+        "latlng": [1195,3206]
+      },
+      { 
+        "name": "Ilze",
+        "latlng": [1040,3060]
+      }
+    ]
+  },
+  {
+    "name": "Athens",
+    "capital": {
+      "name": "Athens College",
+      "latlng": [658,3211]
+    },
+    "cities": [
+      {
+        "name": "Nea Athens",
+        "latlng": [580,3221]
+      },
+      {
+        "name": "Herak",
+        "latlng": [499,3151]
+      },
+      {
+        "name": "Kavala",
+        "latlng": [610,3058]
+      },
+      {
+        "name": "Delos",
+        "latlng": [679,2870]
+      },
+      {
+        "name": "Patria",
+        "latlng": [879,2778]
+      },
+      {
+        "name": "Xanthi",
+        "latlng": [391,2910]
+      },
+      {
+        "name": "Kastoria",
+        "latlng": [209,2680]
+      },
+      {
+        "name": "Synoro",
+        "latlng": [347,2348]
+      }
+    ]
+  },
+  {
+    "name": "Cathyr",
+    "capital": {
+      "name": "Taurin",
+      "latlng": [529,2325]
+    },
+    "cities": [
+      {
+        "name": "Florentia",
+        "latlng": [1022,2258]
+      },
+      {
+        "name": "Tarraco",
+        "latlng": [746,2504]
+      },
+      {
+        "name": "Vindobo",
+        "latlng": [644,2594]
+      },
+      {
+        "name": "Naissus",
+        "latlng": [286,2215]
+      },
+      {
+        "name": "Ala",
+        "latlng": [656,1947]
+      },
+      {
+        "name": "Matilo",
+        "latlng": [728,1583]
+      },
+      {
+        "name": "Dubrae",
+        "latlng": [503,1539]
+      }
+    ]
+  },
+  {
+    "name": "Dwaraki",
+    "capital": {
+      "name": "Rajagriha",
+      "latlng": [1125,1133]
+    },
+    "cities": [
+      {
+        "name": "Muchiri",
+        "latlng": [991,1524]
+      },
+      {
+        "name": "Gwalior",
+        "latlng": [776,1419]
+      },
+      {
+        "name": "Lothal",
+        "latlng": [311,1240]
+      },
+      {
+        "name": "Hansi",
+        "latlng": [982,1334]
+      },
+      {
+        "name": "Osian",
+        "latlng": [880,1098]
+      },
+      {
+        "name": "Kapali",
+        "latlng": [686,876]
+      },
+      {
+        "name": "Bayana",
+        "latlng": [937,663]
+      },
+      {
+        "name": "Chirand",
+        "latlng": [1069,900]
+      },
+      {
+        "name": "Nalanda",
+        "latlng": [1320,713]
+      },
+      {
+        "name": "Velur",
+        "latlng": [1702,867]
+      },
+      {
+        "name": "Patala",
+        "latlng": [1795,808]
+      }
+    ]
+  }
+]
