@@ -45,7 +45,7 @@ const MouseControlButtons = ({map, measuring, setMeasuring, distanceModifier}) =
   let previousDistance = 0
   let startpoint = [0,0]
   let endpoint = [0,0]
-  let polyLine = L.polyline([startpoint,startpoint])
+  let polyLine = L.polyline([startpoint,startpoint], {color: 'black'})
   polyLine.bindPopup('')
   let measuringHappening = false 
 
@@ -72,6 +72,7 @@ const MouseControlButtons = ({map, measuring, setMeasuring, distanceModifier}) =
       const newPopUpString = `${distance} days travel` 
       if (distance-previousDistance > 0) {
         polyLine.setPopupContent(newPopUpString)
+        polyLine.getPopup().setLatLng(endpoint)
       }
       polyLine.redraw()
     }
