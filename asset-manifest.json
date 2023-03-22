@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/leaflet-dnd-map/static/css/main.7f273d89.css",
-    "main.js": "/leaflet-dnd-map/static/js/main.fa2923a8.js",
+    "main.js": "/leaflet-dnd-map/static/js/main.777fe93b.js",
     "static/media/map.png": "/leaflet-dnd-map/static/media/map.69292ccd71aba4b3f772.png",
     "static/media/name-overlay.png": "/leaflet-dnd-map/static/media/name-overlay.bdea94ff92452cc3a5a2.png",
     "static/media/daranik.md": "/leaflet-dnd-map/static/media/daranik.69a36637c84a6c78f0b0.md",
@@ -11,10 +11,10 @@
     "static/media/rajagriha.md": "/leaflet-dnd-map/static/media/rajagriha.c91a5606d7076114aab8.md",
     "static/media/taurin.md": "/leaflet-dnd-map/static/media/taurin.0bcd08f99c533052b6d4.md",
     "main.7f273d89.css.map": "/leaflet-dnd-map/static/css/main.7f273d89.css.map",
-    "main.fa2923a8.js.map": "/leaflet-dnd-map/static/js/main.fa2923a8.js.map"
+    "main.777fe93b.js.map": "/leaflet-dnd-map/static/js/main.777fe93b.js.map"
   },
   "entrypoints": [
     "static/css/main.7f273d89.css",
-    "static/js/main.fa2923a8.js"
+    "static/js/main.777fe93b.js"
   ]
 }
