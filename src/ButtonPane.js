@@ -1,5 +1,47 @@
 import { useState } from "react"
 import * as L from 'leaflet'
+import { Button, ButtonGroup, Popover } from "@mui/material"
+
+const MapControlGroup = ({currentLabel, popoverButtons}) => {
+  const [anchorEl, setAnchorEl] = useState(null)
+
+  const handleShowPopOver = (event) => {
+    setAnchorEl(event.currentTarget);
+  }
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  }
+  
+  const open = Boolean(anchorEl)
+  const id = open ? 'simple-popover' : undefined
+
+  return (
+    <>
+      <Button variant='contained' onClick={handleShowPopOver}>
+        {currentLabel}
+      </Button>
+      <Popover
+        id={id}
+        open={open}
+        anchorEl={anchorEl}
+        onClose={handleClose}
+        anchorOrigin={{
+          vertical: 'center',
+          horizontal: 'right',
+        }}
+        transformOrigin={{
+          vertical: 'center',
+          horizontal: 'left',
+        }}
+      >
+        <ButtonGroup orientation='vertical' size='small'>
+          {popoverButtons}
+        </ButtonGroup>
+      </Popover>
+    </>
+  )
+}
 
 const MovementOptionButtons = ({setDistanceModifier}) => {
   const [movementOption, setMovementOption] = useState('walking')
@@ -8,40 +50,43 @@ const MovementOptionButtons = ({setDistanceModifier}) => {
     horse: 80,
     boat: 120
   }
-  const colors = {
-    walking: ['red', 'black', 'black'], 
-    horse: ['black', 'red', 'black'],
-    boat: ['black', 'black', 'red']
-  }
 
   const handleClick = (option) => {
     setMovementOption(option)
     setDistanceModifier(distanceModifier[option])
   }
 
+  const popoverButtons =
+  <>
+    <Button onClick={() => handleClick('walking')}>walking</Button>
+    <Button onClick={() => handleClick('horse')}>horse</Button>
+    <Button onClick={() => handleClick('boat')}>boat</Button>
+  </>
+
   return (
-    <>
-      <button onClick={() => handleClick('walking')} style={{color: colors[movementOption][0], gridArea: 'd'}}>walking</button>
-      <button onClick={() => handleClick('horse')} style={{color: colors[movementOption][1], gridArea: 'e'}}>horse</button>
-      <button onClick={() => handleClick('boat')} style={{color: colors[movementOption][2], gridArea: 'f'}}>boat</button>
-    </>
+    <MapControlGroup
+      currentLabel={movementOption}
+      popoverButtons={popoverButtons}
+    />
   )
 }
 
 const ShowLabelButton = ({showLabels, setShowLabels}) => {
-  const color = showLabels ? 'green' : 'black'
-
-  const handleClick = () => setShowLabels(!showLabels)
+  const popoverButtons =
+    <>
+      <Button onClick={() => setShowLabels(true)}>on</Button>
+      <Button onClick={() => setShowLabels(false)}>off</Button>
+    </>
 
   return (
-    <>
-      <button onClick={handleClick} style={{color: color, gridArea: 'a'}}>labels</button>
-    </>
+      <MapControlGroup 
+        currentLabel={showLabels ? "labels on" : "labels off"}
+        popoverButtons={popoverButtons}
+      />
   )
 }
 
 const MouseControlButtons = ({map, measuring, setMeasuring, distanceModifier}) => {
-  let colors = ['blue', 'black']
   let previousDistance = 0
   let startpoint = [0,0]
   let endpoint = [0,0]
@@ -87,23 +132,27 @@ const MouseControlButtons = ({map, measuring, setMeasuring, distanceModifier}) =
 
   if (!measuring) {
     map.dragging.enable()
-    colors = ['blue', 'black']
     map.off('mousedown')
     map.off('mousemove')
     map.off('mouseup')
   } else {
     map.dragging.disable()
-    colors = ['black', 'blue']
     map.on('mousedown', handleMouseDown)
     map.on('mousemove', handleMouseMove)
     map.on('mouseup', handleMouseUp)
   }
 
-  return (
+  const popoverButtons =
     <>
-      <button onClick={() => setMeasuring(false)} style={{color: colors[0], gridArea: 'b'}}>drag</button>
-      <button onClick={() => setMeasuring(true)} style={{color: colors[1], gridArea: 'c'}}>measure</button>
+      <Button onClick={() => setMeasuring(false)}>drag</Button>
+      <Button onClick={() => setMeasuring(true)}>measure</Button>
     </>
+
+  return (
+    <MapControlGroup
+      currentLabel={measuring ? 'measure' : 'drag'}
+      popoverButtons={popoverButtons}
+    />
   )
 }
 
@@ -113,20 +162,14 @@ const ButtonPane = ({map, showLabels, setShowLabels}) => {
 
   return(
     <>
-      <div style={{
-          position: 'absolute',
-          left: '44px',
-          margin: '10px',
-          zIndex: 1000,
-          display: 'grid',
-          gridTemplate: 
-              `"a b d"
-              ". c e"
-              ". . f"`
-        }}>
-        <ShowLabelButton showLabels={showLabels} setShowLabels={setShowLabels}/>
-        <MouseControlButtons map={map} measuring={measuring} setMeasuring={setMeasuring} distanceModifier={distanceModifier} />
-        {measuring ? <MovementOptionButtons setDistanceModifier={setDistanceModifier} /> : null}
+      <div className='leaflet-top leaflet-left'>
+        <div className="leaflet-control">
+        <ButtonGroup orientation="vertical" size="small">
+          <ShowLabelButton showLabels={showLabels} setShowLabels={setShowLabels}/>
+          <MouseControlButtons map={map} measuring={measuring} setMeasuring={setMeasuring} distanceModifier={distanceModifier} />
+          {measuring ? <MovementOptionButtons setDistanceModifier={setDistanceModifier} /> : null}
+        </ButtonGroup>
+        </div>
       </div>
     </>
   )

@@ -7,8 +7,9 @@ import capital from './capital.png'
 import world_map from './map.png'
 import name_overlay from './name-overlay.png'
 import nations from './nations.json'
-import CityPopUp from './CityPopUp';
+import CityPopUp from './CityPopUp'
 import ButtonPane from './ButtonPane'
+import ZoomControl from './ZoomControl'
 
 const NationMarkers = () => {
   const [iconSize, setIconSize] = useState(10)
@@ -55,29 +56,21 @@ const NationMarkers = () => {
   )
 }
 
-const MyMap = ({map, setMap, showLabels}) => {
-  const bounds = [[0,0], [2160,3840]]
-
-  return (
-    <>
-      <MapContainer ref={setMap} center={[1080, 1920]} minZoom={-3} zoom={-2} scrollWheelZoom={false} crs={L.CRS.Simple}>
-        <ImageOverlay url={world_map} bounds={bounds} />
-        {showLabels ? <ImageOverlay url={name_overlay} bounds={bounds} /> : null}
-        {null !== map ? <NationMarkers /> : null}
-      </MapContainer>
-    </>
-  )
-}
-
 const FantasyMap = () => {
   const [map, setMap] = useState(null)
   const [showLabels, setShowLabels] = useState(true)
+  const bounds = [[0,0], [2160,3840]]
 
   return (
-    <>
-      {map !== null ? <ButtonPane map={map} showLabels={showLabels} setShowLabels={setShowLabels} /> : null}
-      <MyMap map={map} setMap={setMap} showLabels={showLabels} />
-    </>
+  <>
+    <MapContainer ref={setMap} center={[1080, 1920]} minZoom={-3} zoom={-2} scrollWheelZoom={false} crs={L.CRS.Simple} zoomControl={false}>
+      <ImageOverlay url={world_map} bounds={bounds} />
+      {showLabels ? <ImageOverlay url={name_overlay} bounds={bounds} /> : null}
+      {null !== map ? <NationMarkers /> : null}
+      {null !== map ? <ButtonPane map={map} showLabels={showLabels} setShowLabels={setShowLabels} /> : null}
+      {null !== map ? <ZoomControl map={map} /> : null}
+    </MapContainer>
+  </>
   )
 }
 
