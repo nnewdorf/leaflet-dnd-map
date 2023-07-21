@@ -1,0 +1,398 @@
+[
+  {
+    "name": "Daranik",
+    "latlng": [
+      1430,
+      3000
+    ],
+    "type": "capital",
+    "tags": [
+      "korensa"
+    ]
+  },
+  {
+    "name": "Seeker",
+    "latlng": [
+      1747,
+      3249
+    ],
+    "type": "city",
+    "tags": [
+      "korensa"
+    ]
+  },
+  {
+    "name": "Susa",
+    "latlng": [
+      1402,
+      3317
+    ],
+    "type": "city",
+    "tags": [
+      "korensa"
+    ]
+  },
+  {
+    "name": "Pasara",
+    "latlng": [
+      1084,
+      3432
+    ],
+    "type": "city",
+    "tags": [
+      "korensa"
+    ]
+  },
+  {
+    "name": "Tahrn",
+    "latlng": [
+      880,
+      3330
+    ],
+    "type": "city",
+    "tags": [
+      "korensa"
+    ]
+  },
+  {
+    "name": "Zinjaq",
+    "latlng": [
+      1195,
+      3206
+    ],
+    "type": "city",
+    "tags": [
+      "korensa"
+    ]
+  },
+  {
+    "name": "Ilze",
+    "latlng": [
+      1040,
+      3060
+    ],
+    "type": "city",
+    "tags": [
+      "korensa"
+    ]
+  },
+  {
+    "name": "Athens College",
+    "latlng": [
+      658,
+      3211
+    ],
+    "type": "capital",
+    "tags": [
+      "athens"
+    ]
+  },
+  {
+    "name": "Nea Athens",
+    "latlng": [
+      580,
+      3221
+    ],
+    "type": "city",
+    "tags": [
+      "athens"
+    ]
+  },
+  {
+    "name": "Herak",
+    "latlng": [
+      499,
+      3151
+    ],
+    "type": "city",
+    "tags": [
+      "athens"
+    ]
+  },
+  {
+    "name": "Kavala",
+    "latlng": [
+      610,
+      3058
+    ],
+    "type": "city",
+    "tags": [
+      "athens"
+    ]
+  },
+  {
+    "name": "Delos",
+    "latlng": [
+      679,
+      2870
+    ],
+    "type": "city",
+    "tags": [
+      "athens"
+    ]
+  },
+  {
+    "name": "Patria",
+    "latlng": [
+      879,
+      2778
+    ],
+    "type": "city",
+    "tags": [
+      "athens"
+    ]
+  },
+  {
+    "name": "Xanthi",
+    "latlng": [
+      391,
+      2910
+    ],
+    "type": "city",
+    "tags": [
+      "athens"
+    ]
+  },
+  {
+    "name": "Kastoria",
+    "latlng": [
+      209,
+      2680
+    ],
+    "type": "city",
+    "tags": [
+      "athens"
+    ]
+  },
+  {
+    "name": "Synoro",
+    "latlng": [
+      347,
+      2348
+    ],
+    "type": "city",
+    "tags": [
+      "athens"
+    ]
+  },
+  {
+    "name": "Taurin",
+    "latlng": [
+      529,
+      2325
+    ],
+    "type": "capital",
+    "tags": [
+      "cathyr"
+    ]
+  },
+  {
+    "name": "Florentia",
+    "latlng": [
+      1022,
+      2258
+    ],
+    "type": "city",
+    "tags": [
+      "cathyr"
+    ]
+  },
+  {
+    "name": "Tarraco",
+    "latlng": [
+      746,
+      2504
+    ],
+    "type": "city",
+    "tags": [
+      "cathyr"
+    ]
+  },
+  {
+    "name": "Vindobo",
+    "latlng": [
+      644,
+      2594
+    ],
+    "type": "city",
+    "tags": [
+      "cathyr"
+    ]
+  },
+  {
+    "name": "Naissus",
+    "latlng": [
+      286,
+      2215
+    ],
+    "type": "city",
+    "tags": [
+      "cathyr"
+    ]
+  },
+  {
+    "name": "Ala",
+    "latlng": [
+      656,
+      1947
+    ],
+    "type": "city",
+    "tags": [
+      "cathyr"
+    ]
+  },
+  {
+    "name": "Matilo",
+    "latlng": [
+      728,
+      1583
+    ],
+    "type": "city",
+    "tags": [
+      "cathyr"
+    ]
+  },
+  {
+    "name": "Dubrae",
+    "latlng": [
+      503,
+      1539
+    ],
+    "type": "city",
+    "tags": [
+      "cathyr"
+    ]
+  },
+  {
+    "name": "Rajagriha",
+    "latlng": [
+      1125,
+      1133
+    ],
+    "type": "capital",
+    "tags": [
+      "dwaraki"
+    ]
+  },
+  {
+    "name": "Muchiri",
+    "latlng": [
+      991,
+      1524
+    ],
+    "type": "city",
+    "tags": [
+      "dwaraki"
+    ]
+  },
+  {
+    "name": "Gwalior",
+    "latlng": [
+      776,
+      1419
+    ],
+    "type": "city",
+    "tags": [
+      "dwaraki"
+    ]
+  },
+  {
+    "name": "Lothal",
+    "latlng": [
+      311,
+      1240
+    ],
+    "type": "city",
+    "tags": [
+      "dwaraki"
+    ]
+  },
+  {
+    "name": "Hansi",
+    "latlng": [
+      982,
+      1334
+    ],
+    "type": "city",
+    "tags": [
+      "dwaraki"
+    ]
+  },
+  {
+    "name": "Osian",
+    "latlng": [
+      880,
+      1098
+    ],
+    "type": "city",
+    "tags": [
+      "dwaraki"
+    ]
+  },
+  {
+    "name": "Kapali",
+    "latlng": [
+      686,
+      876
+    ],
+    "type": "city",
+    "tags": [
+      "dwaraki"
+    ]
+  },
+  {
+    "name": "Bayana",
+    "latlng": [
+      937,
+      663
+    ],
+    "type": "city",
+    "tags": [
+      "dwaraki"
+    ]
+  },
+  {
+    "name": "Chirand",
+    "latlng": [
+      1069,
+      900
+    ],
+    "type": "city",
+    "tags": [
+      "dwaraki"
+    ]
+  },
+  {
+    "name": "Nalanda",
+    "latlng": [
+      1320,
+      713
+    ],
+    "type": "city",
+    "tags": [
+      "dwaraki"
+    ]
+  },
+  {
+    "name": "Velur",
+    "latlng": [
+      1702,
+      867
+    ],
+    "type": "city",
+    "tags": [
+      "dwaraki"
+    ]
+  },
+  {
+    "name": "Patala",
+    "latlng": [
+      1795,
+      808
+    ],
+    "type": "city",
+    "tags": [
+      "dwaraki"
+    ]
+  }
+]
